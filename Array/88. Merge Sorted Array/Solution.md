@@ -38,11 +38,50 @@ Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
 * Copy m elements in the input array 1 (```nums1```) to the new array. Then, iterating the elements in the new array and the input array 2 (```nums2```). Comparing each elements and put the smaller element to the beginning of the input array 1 (```nums1```) and keep track of how many elements have been processed or put in the input array 1 (```nums1```), the input array 2 (```nums2```) and the new array. when either the input array 2 (```nums2```) and the new array finished is processing, put the remainning element to the input array 1 (```nums1```).
 
 ## Steps:
-| 1 | 2 | 3 | 0 | 0 |
-|---|---|---|---|---|
-|   |   |   |   |   |
-| 2 | 5 | 6 |   |   |
-|   |   |   |   |   |
+**Before:**
+
+nums1: 
+|  1  | 2 | 3 | 0 | 0 | 0 |
+|-----|---|---|---|---|---|
+|i+j=0|   |   |   |   |   |
+copy of nums1:
+| 1  | 2 | 3 |   |   |   |
+|----|---|---|---|---|---|
+| i=0|   |   |   |   |   |
+nums2:
+| 2  | 5 | 6 |   |   |   |
+|----|---|---|---|---|---|
+| j=0|   |   |   |   |   |
+
+**When one of the array is processed**
+
+nums1: 
+| 1  | 2 | 2 | 3 | 0 | 0 |
+|----|---|---|---|---|---|
+|    |   |   |   |i+j = 4 |   |
+copy of nums1:
+| 1  | 2 | 3 |    |   |   |
+|----|---|---|----|---|---|
+|    |   |   | i=3|   |   |
+nums2:
+| 2  | 5 | 6 |   |   |   |
+|----|---|---|---|---|---|
+|    | j=1 |   |   |   |   |
+
+**End**
+
+nums1: 
+| 1  | 2 | 2 | 3 | 5 | 6 |         |
+|----|---|---|---|---|---|---------|
+|    |   |   |   |   |   | i+j = 4 |
+copy of nums1:
+| 1  | 2 | 3 |    |   |   |
+|----|---|---|----|---|---|
+|    |   |   | i=3|   |   |
+nums2:
+| 2  | 5 | 6 |   |   |   |
+|----|---|---|---|---|---|
+|    |   |   | j=3 |   |   |
 
 ##  Time Complexity:
 Time Complexity: O(m+n), Space Complexity: O(m)
