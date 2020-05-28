@@ -1,1 +1,2 @@
-Study Source: https://leetcode.com/explore/learn/card/fun-with-arrays/
+# Study Resource: 
+https://leetcode.com/explore/learn/card/fun-with-arrays/
