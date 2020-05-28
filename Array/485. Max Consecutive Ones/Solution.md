@@ -12,14 +12,15 @@ Output: 3
     The maximum number of consecutive 1s is 3.
 Note:
 
-* The input array will only contain 0 and 1.
-* The length of input array is a positive integer and will not exceed 10,000
+1. ```The input array will only contain 0 and 1.```
+2. ```The length of input array is a positive integer and will not exceed 10,000```
 
 
 # Solution
-## Steps:
+## Idea:
 * iterate the input array and keep track of the maximun consecutive of one.
-* when iterating the input array, if the current element is one, begin to start counting of the consecutive of one. If the current element is zero, compare it with the maximun consecutive of one. If bigger, then reset the maximum consecutive of one with the new consecutive of one. If smaller, do nothing. In both cases, reset the count as zero.
+* when iterating the input array, if the current element is one, increase the counting of one by one. If the current element is zero, reset the counting of one to zero. 
+* Comparing the counting of one and the maximum consecutive of one in each loop. If bigger, then reset the maximum consecutive of one with the new consecutive of one. If smaller, do nothing. In both cases, reset the count as zero.
 ##  Time Complexity:
 Time Complexity: O(n), Space Complexity: O(1)
 
@@ -28,11 +29,9 @@ Time Complexity: O(n), Space Complexity: O(1)
         int maxConsecutive = 0, counting = 0;
         for(int binary : nums){
             if(binary == 1) counting++;
-            else{
-                if(counting > maxConsecutive){
-                    maxConsecutive = counting;
-                }
-                counting = 0;
+            else counting = 0;
+            if(counting > maxConsecutive){
+                maxConsecutive = counting;
             }
         }
         return maxConsecutive;
