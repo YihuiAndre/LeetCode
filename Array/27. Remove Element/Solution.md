@@ -48,7 +48,7 @@ for (int i = 0; i < len; i++) {
 
 
 # Solution
-## Idea:
+## Idea#1:
 * Brute Force: Iterating the input array and look for the value (```val```). Once found it, remove it by shifting the elements on its right to left and recheck the new element in that index again. after iteration, return number of elements in the input array that doesn't be removed.
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
@@ -71,7 +71,7 @@ Time Complexity: O(n^2), Space Complexity: O(1)
     }
 ```
 
-## Idea:
+## Idea#2:
 * Iterating the input array one by one and counting the number of element that need to be removed. If the current element contain n number of element with value (```val```) on the left side, then it will need to shift the index to the left for n index.
 
 
@@ -89,12 +89,12 @@ Time Complexity: O(n), Space Complexity: O(1)
     }
 ```
 
-## Idea:
+## Idea#3:
 
 * Iterating the input array. If the current element has the same value (```val```), switch it with the last element of the input array and decrease the length of the input array (**Not the Capacity!!**) until the current element doesn't have the same value (```val```). Then, iterating to the next element.
 
 
-##  Time Complexity:
+## Time Complexity:
 Time Complexity: O(n), Space Complexity: O(1)
 
 ```java

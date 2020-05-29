@@ -17,7 +17,7 @@ Note:
 
 
 # Solution
-## Idea:
+## Idea#1:
 * iterating the input array and keep track of the maximun and current consecutive of one.
 * During the iteration, if the current element is one, increase the current consecutive of one by one. If the current element is zero, reset the current counting of one to zero. 
 * Comparing and updating the current consecutive of one and the maximum consecutive of one in each loop. If bigger, replace the maximum consecutive of one with the new value. If smaller, do nothing.

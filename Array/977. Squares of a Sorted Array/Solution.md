@@ -24,7 +24,7 @@ Output: [4,9,9,49,121]
 
 
 # Solution
-## Idea:
+## Idea#1:
 * Sorted: Making all the elements in the input array multiply by itself and then sorted by increasing order.
 ##  Time Complexity:
 Time Complexity: O(nlogn), Space Complexity: O(1)

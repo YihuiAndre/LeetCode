@@ -20,7 +20,7 @@ Output: [1,2,2,3,5,6]
 
 
 # Solution
-## Idea:
+## Idea#1:
 * Sorted: Copy all the elements in the input array 2 (```nums2```) to the input array 1 (```nums1```). Then, sorting the input array 1 (```nums1```).
 ##  Time Complexity:
 Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
@@ -34,7 +34,7 @@ Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
     }
 ```
 
-## Idea:
+## Idea#2:
 * Create a new copy of the input array 1 (```nums1```) with capacity of m with the same element. 
 * Iterating the elements in the new array and the input array 2 (```nums2```). Comparing and picking the smaller element among the two arrays to the input array 1 (```nums1```) and keep track of the number of the elements have been processed in the input array 1 (```nums1```), the input array 2 (```nums2```) and the new array. 
 * when either the input array 2 (```nums2```) or the new array is finished processing, put the remainning element to the input array 1 (```nums1```).
