@@ -21,7 +21,7 @@ Output: [1,2,2,3,5,6]
 
 # Solution
 ## Idea:
-* Copy all the elements in the input array 2 (```nums2```) to the input array 1 (```nums1```). Then, sorting the input array 1 (```nums1```).
+* Sorted: Copy all the elements in the input array 2 (```nums2```) to the input array 1 (```nums1```). Then, sorting the input array 1 (```nums1```).
 ##  Time Complexity:
 Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
 
@@ -35,7 +35,9 @@ Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
 ```
 
 ## Idea:
-* Copy m elements in the input array 1 (```nums1```) to the new array. Then, iterating the elements in the new array and the input array 2 (```nums2```). Comparing each elements and put the smaller element to the beginning of the input array 1 (```nums1```) and keep track of how many elements have been processed or put in the input array 1 (```nums1```), the input array 2 (```nums2```) and the new array. when either the input array 2 (```nums2```) and the new array finished is processing, put the remainning element to the input array 1 (```nums1```).
+* Create a new copy of the input array 1 (```nums1```) with capacity of m with the same element. 
+* Iterating the elements in the new array and the input array 2 (```nums2```). Comparing and picking the smaller element among the two arrays to the input array 1 (```nums1```) and keep track of the number of the elements have been processed in the input array 1 (```nums1```), the input array 2 (```nums2```) and the new array. 
+* when either the input array 2 (```nums2```) or the new array is finished processing, put the remainning element to the input array 1 (```nums1```).
 
 ## Steps:
 **nums1:**
@@ -46,55 +48,55 @@ Time Complexity: O((m+n)log(m+n)), Space Complexity: O(1)
 
 **copy of nums1:**
 
-| 1  | 2 | 3 |   |   |   |
-|----|---|---|---|---|---|
-| i=0|   |   |   |   |   |
+|  1  | 2 | 3 |   |   |   |
+|-----|---|---|---|---|---|
+| i=0 |   |   |   |   |   |
 
 **nums2:**
 
-| 2  | 5 | 6 |   |   |   |
-|----|---|---|---|---|---|
-| j=0|   |   |   |   |   |
+|  2  | 5 | 6 |   |   |   |
+|-----|---|---|---|---|---|
+| j=0 |   |   |   |   |   |
 
 ----
 
 **nums1:**
 
-| 1  | 2 | 2 | 3 |    0   | 0 |
-|----|---|---|---|--------|---|
-|    |   |   |   |i+j = 4 |   |
+| 1 | 2 | 2 | 3 |    0    | 0 |
+|---|---|---|---|---------|---|
+|   |   |   |   | i+j = 4 |   |
 
 **copy of nums1:**
 
-| 1  | 2 | 3 |    |   |   |
-|----|---|---|----|---|---|
-|    |   |   | i=3|   |   |
+| 1 | 2 | 3 |     |   |   |
+|---|---|---|-----|---|---|
+|   |   |   | i=3 |   |   |
 
 **nums2:**
 
-| 2  | 5  | 6 |   |   |   |
-|----|----|---|---|---|---|
-|    | j=1 |   |   |   |   |
+| 2 |  5  | 6 |   |   |   |
+|---|-----|---|---|---|---|
+|   | j=1 |   |   |   |   |
 
 ----
 
 **nums1:**
 
-| 1  | 2 | 2 | 3 | 5 | 6 |         |
-|----|---|---|---|---|---|---------|
-|    |   |   |   |   |   | i+j = 4 |
+| 1 | 2 | 2 | 3 | 5 | 6 |         |
+|---|---|---|---|---|---|---------|
+|   |   |   |   |   |   | i+j = 4 |
 
 **copy of nums1:**
 
-| 1  | 2 | 3 |    |   |   |
-|----|---|---|----|---|---|
-|    |   |   | i=3|   |   |
+| 1 | 2 | 3 |     |   |   |
+|---|---|---|-----|---|---|
+|   |   |   | i=3 |   |   |
 
 **nums2:**
 
-| 2  | 5 | 6 |    |   |   |
-|----|---|---|----|---|---|
-|    |   |   | j=3|   |   |
+| 2 | 5 | 6 |     |   |   |
+|---|---|---|-----|---|---|
+|   |   |   | j=3 |   |   |
 
 ##  Time Complexity:
 Time Complexity: O(m+n), Space Complexity: O(m)
