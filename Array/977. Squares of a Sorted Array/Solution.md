@@ -25,7 +25,7 @@ Output: [4,9,9,49,121]
 
 # Solution
 ## Idea:
-* Squaring all the elements in the input array and then sorted.
+* Sorted: Making all the elements in the input array multiply by itself and then sorted by increasing order.
 ##  Time Complexity:
 Time Complexity: O(nlogn), Space Complexity: O(1)
 
