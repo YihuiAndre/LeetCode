@@ -33,7 +33,7 @@ Only 1771 contains an even number of digits.
 
 # Solution
 ## Idea:
-* Converting all the elements in the input array to datatype String and then recording the number of length of the String that can be divisible by 2
+* Converting all the elements in the input array to datatype String and then recording the number of the String with the length that can be divisible by 2
 ##  Time Complexity:
 Time Complexity: O(n), Space Complexity: O(1)
 
