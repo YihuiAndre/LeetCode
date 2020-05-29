@@ -1,7 +1,7 @@
 # Problem
 [27. Remove Element](https://leetcode.com/problems/remove-element/)
 
-Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+Given an array nums and a value val, remove all instances of that value *in-place* and return the new length.
 
 Do not allocate extra space for another array, you must do this by **modifying the input array** *in-place* with O(1) extra memory.
 
@@ -49,7 +49,7 @@ for (int i = 0; i < len; i++) {
 
 # Solution
 ## Idea:
-* Brute Force: Iterating the input array and look for the value (```val```). Once found it, remove it by shifting the right elements to left and check for the new element in the same index. after it, return number of elemtns in the input array that doesn't be removed.
+* Brute Force: Iterating the input array and look for the value (```val```). Once found it, remove it by shifting the elements on its right to left and recheck the new element in that index again. after iteration, return number of elements in the input array that doesn't be removed.
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
 
@@ -72,7 +72,7 @@ Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 
 ## Idea:
-* Iterating the input array. If the element in the input arrary has n value (```val```) on its left side, then that elements will need to shift to the left for n index.
+* Iterating the input array one by one and counting the number of element that need to be removed. If the current element contain n number of element with value (```val```) on the left side, then it will need to shift the index to the left for n index.
 
 
 ##  Time Complexity:
@@ -91,7 +91,7 @@ Time Complexity: O(n), Space Complexity: O(1)
 
 ## Idea:
 
-* Iterating the input array. If current element has the same value (```val```), switch it with the last element until the current element doesn't have the same value (```val```).
+* Iterating the input array. If the current element has the same value (```val```), switch it with the last element of the input array and decrease the length of the input array (**Not the Capacity!!**) until the current element doesn't have the same value (```val```). Then, iterating to the next element.
 
 
 ##  Time Complexity:
