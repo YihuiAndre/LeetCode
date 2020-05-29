@@ -49,7 +49,7 @@ for (int i = 0; i < len; i++) {
 
 # Solution
 ## Idea:
-* Brute Force: Iterating the input array and look for the value (```val```). Once found it, remove it by shifting the elements on its right to left and recheck the new element in that index again. after iteration, return number of elements in the input array that doesn't be removed.
+* **Brute Force**: Iterating the input array and look for the value (```val```). Once found it, remove it by shifting the elements on its right to left and recheck the new element in that index again. after iteration, return number of elements in the input array that doesn't be removed.
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
 
