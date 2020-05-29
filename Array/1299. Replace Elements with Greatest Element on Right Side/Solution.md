@@ -39,7 +39,7 @@ Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 
 ## Idea#2:
-* **Brute Force#2:** The worst case time complexity is similar to the [Idea#1]
+* **Brute Force#2:** The worst case time complexity is similar to the [Idea#1](./Solution.md#idea1)
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
 
