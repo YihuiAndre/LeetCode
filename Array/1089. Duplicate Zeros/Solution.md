@@ -30,7 +30,7 @@ Explanation: After calling your function, the input array is modified to: [1,2,3
 
 # Solution
 ## Idea:
-* ***Brute Force:*** Iterating the input array one by one. If zero present and index of it not locate at the end of the input array, insert zero to the next index and shift the remaining elements to the right. Then, Skiping the next index and move to the next next index.
+* ***Brute Force:*** Iterating the input array one by one. If zero presents in the element and the index of it doesn't locate at the end of the input array, shift the remaining elements to the right and insert zero to the next index. Then, Skipping the next index and move to the next next index.
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
 
@@ -48,7 +48,9 @@ Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 
 ## Idea:
-* Create a new array to copy the element in the input array one by one and keep track of the number of element in the new array. If there is a zero in the input array and remaining space in new array is more than two, copy two zero to the new array. After it, copying all the elements from the new array to the input array
+* Create a new empty array to and keep track of the length (**Not the Capacity!!**) of the new array. 
+* Iterating the input array one by one and insert to the new array. If the element is zero in the input array and remaining space to fill in new array is more than or equal to two, insert two zero to the new array. 
+* After it, copying all the elements from the new array to the input array
 ##  Time Complexity:
 Time Complexity: O(n), Space Complexity: O(n)
 
