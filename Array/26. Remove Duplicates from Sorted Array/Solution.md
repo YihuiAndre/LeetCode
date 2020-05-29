@@ -45,7 +45,7 @@ for (int i = 0; i < len; i++) {
 
 # Solution
 ## Idea#1:
-* This LeetCode question is similar to [27. Remove Element](https://leetcode.com/problems/remove-element/). It can use [Idea#2](https://github.com/YihuiAndre/LeetCode/blob/master/Array/27.%20Remove%20Element/Solution.md#idea-1) to solve it.
+* This LeetCode question is similar to [27. Remove Element](https://leetcode.com/problems/remove-element/). It can use [Idea#2](https://github.com/YihuiAndre/LeetCode/blob/master/Array/27.%20Remove%20Element/Solution.md#idea2) to solve it.
 ##  Time Complexity:
 Time Complexity: O(n), Space Complexity: O(1)
 
