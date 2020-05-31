@@ -39,7 +39,10 @@ Time Complexity: O(n^2), Space Complexity: O(1)
 ```
 
 ## Idea#2:
-* **Brute Force#2:** The worst case time complexity is similar to the [Idea#1](./Solution.md#idea1)
+* **Brute Force#2:** The worst case time complexity is similar to the [Idea#1](./Solution.md#idea1) but it's only applying for the sorted array. In the best case time complecity will be Omega(n).
+
+
+
 ##  Time Complexity:
 Time Complexity: O(n^2), Space Complexity: O(1)
 
