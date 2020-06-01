@@ -1,6 +1,8 @@
 # Problem
 [1346. Check If N and Its Double Exist](https://leetcode.com/problems/check-if-n-and-its-double-exist/)
 
+[中文](https://leetcode-cn.com/problems/check-if-n-and-its-double-exist/)
+
 Given an array ```arr``` of integers, check if there exists two integers ```N``` and ```M``` such that ```N``` is the double of ```M``` ( i.e. ```N = 2 * M```).
 
 More formally check if there exists two indices i and j such that :

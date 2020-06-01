@@ -1,9 +1,11 @@
 # Problem
 [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/)
 
+[中文](https://leetcode-cn.com/problems/max-consecutive-ones/)
+
 Given a binary array, find the maximum number of consecutive 1s in this array.
 
-**Example 1:**
+**Example:**
 ```text
 Input: [1,1,0,1,1,1]
 Output: 3

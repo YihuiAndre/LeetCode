@@ -1,6 +1,8 @@
 # Problem
 [941. Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array/)
 
+[中文](https://leetcode-cn.com/problems/valid-mountain-array/)
+
 Given an array ```A``` of integers, return ```true``` if and only if it is a *valid mountain array*.
 
 Recall that A is a mountain array if and only if:

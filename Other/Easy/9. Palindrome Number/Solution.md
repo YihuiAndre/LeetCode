@@ -1,6 +1,8 @@
 # Problem
 [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
+[中文](https://leetcode-cn.com/problems/palindrome-number/)
+
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 

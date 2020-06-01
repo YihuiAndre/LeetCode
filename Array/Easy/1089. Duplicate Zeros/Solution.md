@@ -1,6 +1,8 @@
 # Problem
 [1089. Duplicate Zeros](https://leetcode.com/problems/duplicate-zeros/)
 
+[中文](https://leetcode-cn.com/problems/duplicate-zeros/)
+
 Given a fixed length array arr of integers, duplicate each occurrence of zero, shifting the remaining elements to the right.
 
 Note that elements beyond the length of the original array are not written.
